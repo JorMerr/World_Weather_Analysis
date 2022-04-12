@@ -25,10 +25,16 @@ Next, using Google API, we iterated through the preferred cities DataFrame to fi
 
 The Hotel DataFrame was cleaned of any missing values for Hotel Names that were not located, and was then exported as a CSV file to the Vacation_Search folder. A map image was generated with the hotel locations as markers on the map, with an Info Box which appears when the location marker is clicked to review data for each Hotel in each City. An image of the Hotel marker map was save to the Vacation_Search folder.
 
+![Hotels Map](https://github.com/JorMerr/World_Weather_Analysis/blob/main/Vacation_Search/WeatherPy_vacation_map.png)
+
 #### Plan Trip Itinerary
 
 The final section of the project involved using Google API to map a Trip Itinerary between 4 different cities. For the purposes of this project, 4 cities were chosen in Mexico, all of which met the temperature range criteria, and all of which could be travelled between by Driving.
 
+![Driving Map](https://github.com/JorMerr/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map.PNG)
+
 First, the preferred cities CSV file was used to generatea DataFrame of cities which met the original temperature range criteria. We then repurposed our code from the location markers map image to generate the image again and search for suitable cities in a single country between which travel by car was available. The cities chosen were all in Mexico; Lazaro Cardenas; La Cruz; Chicontepec; Anton Lizardo. The start and end cities for the trip were both Lazaro Cardenas.
 
-A new image was created using Google Directions API to set a Directions Layer with the Start and End Points, the Waypoints of the three other cities to visit, and the Travel Mode of Driving. The image was saved to the Vacation_Itinerary folder.
+A new image was created using Google Directions API to set a Directions Layer with the Start and End Points, the Waypoints of the three other cities to visit, and the Travel Mode of Driving. The image with the Info Boxes for the Hotel and City information was saved to the Vacation_Itinerary folder.
+
+![Hotel Info](https://github.com/JorMerr/World_Weather_Analysis/blob/main/Vacation_Itinerary/WeatherPy_travel_map_markers.PNG)
